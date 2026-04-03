@@ -1,21 +1,32 @@
-source('source/main.R')
+source('source/main_ind.R')
 # load(paste0("../../shared/data_projects/ithaca/exeves/paths.Rdata"))
 
 load(paste0("~/shared/data_projects/ithaca/exeves/paths.Rdata"))
 
-CZECHIA_LON_MIN <- 12
-CZECHIA_LON_MAX <- 19 
-CZECHIA_LAT_MIN <- 48.5 
-CZECHIA_LAT_MAX <- 51.3
+# CZECHIA_LON_MIN <- 12
+# CZECHIA_LON_MAX <- 19 
+# CZECHIA_LAT_MIN <- 48.5 
+# CZECHIA_LAT_MAX <- 51.3
+# 
+# CEU_LON_MIN <- 12
+# CEU_LON_MAX <- 19 
+# CEU_LAT_MIN <- 48.5
+# CEU_LAT_MAX <- 51.3
 
-CEU_LON_MIN <- 12
-CEU_LON_MAX <- 19 
-CEU_LAT_MIN <- 48.5 
-CEU_LAT_MAX <- 51.3
+# India
+INDIA_LON_MIN <- 68
+INDIA_LON_MAX <- 97
+INDIA_LAT_MIN <- 6
+INDIA_LAT_MAX <- 37
+
+CEU_LON_MIN <- 68
+CEU_LON_MAX <- 97
+CEU_LAT_MIN <- 6
+CEU_LAT_MAX <- 37
 
 START_PERIOD_1 <- as.Date("1981-1-1") 
 END_PERIOD_1 <- as.Date("2001-12-31")
-END_PERIOD_2 <- as.Date("2022-12-31")
+END_PERIOD_2 <- as.Date("2023-12-31")
 PERIOD_LENGTH <- round(as.numeric((END_PERIOD_2 - START_PERIOD_1)/ 365.25), 0)
 
 EXTREMES_THRES <- 0.95
